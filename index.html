@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<meta name="apple-mobile-web-app-capable" content="yes"></meta>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
+<link rel="shortcut icon" href="orange.svg" type="image/png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+<title>Raspberry Pi Pico GPIO Pinout</title>
+<meta name="description" content="fruity.computer - a blog about fruit-themed single-board computers and microcontrollers." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+<style type="text/css">
+    body { 
+        display: grid;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 20px 75px 1fr 1fr 20px;
+        background: #ddd;
+        width: 100%;
+        padding-top: 20px;
+        grid-column-gap: 5px;
+    }
+    h1, h2, h3, h4 {
+        font-family: "Cherry Bomb One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+    header h1 {
+        font-size: 50px;
+        line-height: 40px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: -5px;
+        grid-column: 3;
+    }
+    header figure {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+        margin: 0;
+        padding: 0;
+        grid-column: 2;
+    }
+    header img {
+        height: 40px;
+    }
+    header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 10px 0 0;
+        text-align: right;
+    }
+    header li {
+        display: inline-block;
+        padding: 0 0 0 10px;
+        white-space: pre;
+    }
+    header li:nth-child(2) a, header li:nth-child(2) a:visited, header li:nth-child(2) a:hover {color: #268bd2;}
+    header li:nth-child(3) a, header li:nth-child(3) a:visited, header li:nth-child(3) a:hover {color: #d33682;}
+    header li:nth-child(4) a, header li:nth-child(4) a:visited, header li:nth-child(4) a:hover {color: #dc322f;}
+
+    h2 img {
+        height:1em;
+        margin-top:2px;
+        position: relative;
+        top: 2px;
+    }
+
+    article {
+        margin: 0 105px;
+        max-width: 800px;
+    }
+
+    footer {
+        display: grid;
+        align-items: center;
+        margin: 20px 0;
+    }
+    footer p {
+        padding: 5px 10px;
+        margin: 0;
+        text-align: center;
+        color: #666666;
+    }
+    footer a.selected {
+        color: #666666;
+        text-decoration: none;
+    }
+    footer a, footer a:visited {
+        color: #1d6ca5;
+    }
+    footer a:hover {
+        color: #3ba6f1;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <figure>
+        <img src="raspberry.svg" />
+        <img src="orange.svg" />
+        <img src="cherry.svg" />
+        <img src="banana.svg" />
+        </figure>
+        <h1>fruity.<br />computer</h1>
+        <ul><li title="Please donate to support continued work on these websites! Thank you.">Donate</li><li><a href="https://ko-fi.com/gadgetoid" title="Buy me a coffee on Ko-Fi">Ko-Fi</a></li><li><a href="https://github.com/sponsors/Gadgetoid" title="Sponsor me on GitHub">GitHub</a></li><li><a href="https://www.patreon.com/gadgetoid" title="Sponsor me on Patreon">Patreon</a></li></ul>
+    </header>
+    <article>
+        <section>
+            <h2><img src="raspberry.svg" /> I really have absolutely no idea what I'm doing with this yet!</h2>
+            <p>Hello. I've been working with a certain fruit-themed computer more or less since it launched.</p>
+            <p>I cut my teeth (that's a silly expression!) packaging up WiringPi as a Ruby module using SWIG and various other incantations I didn't understand.</p>
+            <p>Many years later I've learned a lot - mostly about how much more I don't understand - and entrenched myself into the zeitgeist of embedded computing and open-source code.</p>
+        </section>
+        <section>
+            <h2><img src="orange.svg" /> But I have made a bunch of stuff I'd like to share!</h2>
+            <h3>Pinouts and things...</h3>
+            <ul>
+                <li><a title="Raspberry Pi Pinout" href="https://pi.pinout.xyz/">A minimal GPIO pinout for the Raspberry Pi (40-pin) SBC.</a></li>
+                <li><a title="Raspberry Pi Pico Pinout" href="https://pico.pinout.xyz/">An accessible, interactive pinout for the Raspberry Pi Pico microcontroller board.</a></li>
+                <li><a href="https://ko-fi.com/s/ae1ab316fc">A Raspberry Pi Pico pinout desktop wallpaper.</a></li>
+            </ul>
+            <h3>FOSS projects...</h3>
+            <ul>
+                <li><a href="https://github.com/gadgetoid/ffsmake">ffsmake - a tool for packing up MicroPython-compatible FAT filesystems</a></li>
+                <li><a href="https://github.com/gadgetoid/dir2uf2">dir2uf2 - a tool for packing up MicroPython-compatible LittleFs filesystems</a></li>
+                <li><a href="https://github.com/gadgetoid/py_decl">py_decl - a Python library for reading Pico SDK's "binary declaration" metadata.</a></li>
+            </ul>
+        </section>
+    </article>
+    <footer>
+        <p><a title="Raspberry Pi Pinout" href="https://pi.pinout.xyz/">Pi Pinout</a>
+| <a title="Raspberry Pi Pico Pinout" href="https://pico.pinout.xyz/">Pico Pinout</a>
+| <a title="Raspberry Pi Pico W Pinout" href="https://picow.pinout.xyz/">Pico W Pinout</a>
+| <a title="Raspberry Pi Pico 2 Pinout" href="https://pico2.pinout.xyz/">Pico 2 Pinout</a></p>
+        <p>This is the personal blog of <a href="https://fosstodon.org/@gadgetoid" title="@gadgetoid at Mastodon">@Gadgetoid</a>.</p>
+        <p>Enjoying it? Toss me some coin via <a href="https://ko-fi.com/gadgetoid" title="Buy me a coffee on Ko-Fi">Ko-Fi</a>, <a href="https://github.com/sponsors/Gadgetoid" title="Sponsor me on GitHub">GitHub</a> or <a href="https://www.patreon.com/gadgetoid" title="Sponsor me on Patreon">Patreon</a>.</p>
+    </footer>
+</body>
+</html>
